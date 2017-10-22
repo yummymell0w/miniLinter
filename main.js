@@ -3,3 +3,19 @@ let story = 'Last weekend, I took literally the most beautiful bike ride of my l
 let overusedWords = ['really', 'very', 'basically'];
 
 let unnecessaryWords = ['extremely', 'literally', 'actually' ];
+
+let storyWords = story.split(' ');
+console.log(storyWords.length);
+
+let betterWords = storyWords.filter(function(storyWord) {
+    return storyWord != unnecessaryWords.includes();
+});
+console.log(betterWords.length);
+
+let overusedWordsAmount = 0;
+overusedWordsAmount = storyWords.forEach(function(storyWord) {
+    if (storyWord === 'really'|| storyWord === 'very' || storyWord === 'basically') {
+        return overusedWordsAmount++;
+    }
+});
+console.log(overusedWordsAmount);
