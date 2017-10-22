@@ -13,9 +13,9 @@ let betterWords = storyWords.filter(function(storyWord) {
 console.log(betterWords.length);
 
 let overusedWordsAmount = 0;
-overusedWordsAmount = storyWords.forEach(function(storyWord) {
+storyWords.forEach(function(storyWord) {
     if (storyWord === 'really'|| storyWord === 'very' || storyWord === 'basically') {
-        return overusedWordsAmount++;
+        overusedWordsAmount++;
     }
 });
 console.log(overusedWordsAmount);
