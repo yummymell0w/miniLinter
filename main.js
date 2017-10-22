@@ -19,3 +19,11 @@ storyWords.forEach(function(storyWord) {
     }
 });
 console.log(overusedWordsAmount);
+
+let sentenceCounter = 0;
+storyWords.forEach(function(storyWord) {
+    if (storyWord.includes('.') || storyWord.includes('!')) {
+        sentenceCounter ++;
+    }
+});
+console.log(sentenceCounter);
